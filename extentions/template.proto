@@ -1,0 +1,20 @@
+package com.ava.frame.netty.proto;
+option java_package = "com.ava.frame.netty.proto";
+option java_outer_classname = "Template";
+message ReqChat {
+    required string name = 1;
+}
+message RespChat{
+    required string sign = 1;
+}
+//响应&请求 只允许新增
+message MessageInfo {
+    required string service = 1;
+    required int32 sn = 2;
+    optional string token = 3;
+    optional int32 uid = 4;
+    optional int32 code = 5;
+    optional string msg = 6;//消息
+    optional ReqChat reqChat = 7;
+    optional RespChat respChat = 8;
+}
