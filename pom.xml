@@ -166,46 +166,7 @@
             <version>2.10.0</version>
         </dependency>
     </dependencies>
-    <!--maven private treasury-->
-    <repositories>
-        <!--spring cloud config client-->
-        <repository>
-            <id>spring-milestones</id>
-            <name>Spring Milestones</name>
-            <url>http://repo.spring.io/milestone</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-        <!--changhong private treasury-->
-        <repository>
-            <id>changhong</id>
-            <name>Local Central Repo</name>
-            <url>http://maven.tinyvoice.net:8003/repository/public/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-        </repository>
-        <!--changhong config server appollo-->
-        <repository>
-            <id>maven-public</id>
-            <name>maven-public</name>
-            <url>https://maven.changhong.io/nexus/content/groups/public/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-    <distributionManagement>
-        <repository>
-            <id>rcsReleases</id>
-            <name>rcsReleases Repositories</name>
-            <url>http://maven.tinyvoice.net:8003/repository/rcsReleases/</url>
-        </repository>
-    </distributionManagement>
+
 
 
 </project>
